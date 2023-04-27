@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.logoImg {
+  width: 200px;
+  height: 50px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* About section */
+.about-section {
+  background: #F5f5f5;
+  padding: 80px 0;
+  overflow: hidden;
+  color: #222222;
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: aboutAnimation 25s linear infinite;
+}
+
+/* .about-section::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: aboutAnimation 25s linear infinite reverse;
+} */
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 30px;
+}
+
+.section-description {
+  font-size: 18px;
+  color: #222222;  
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .about-section::before, .about-section::after {
+    display: none;
+  }
+}
+/* 
+@keyframes aboutAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(200px, 200px);
+  }
+} */
+
+
+/* services */
+
+.wrapper-serv{
+    width: 100vw;
+    min-height: 70vh;
+    max-height: max-content;
+    padding: 100px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(275deg, #7eb08e 0%, #a7d6ab 100%);
+  }
+ .wrapper-serv .container-services{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+.wrapper-serv .container-services .card img{
+    width: 200px;
+  }
+ .wrapper-serv .container-services .card{
+    width: 31%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    height: 300px;
+    border-radius: 0px 0px 5px 5px;
+    padding-bottom: 45px;
+    text-align: center;
+    margin: 0 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .border-top{
+    color: #222222;
+  }
+
+  .wrapper-serv .container-services .card p{
+    color: #222222;
+    margin-bottom: 10px;
+  }
+.topborder--yellow{
+    border-top: 4px solid #FCAF4A;
+    color:#FCAF4A;
+  }
+  .wrapper-serv .container-services .card .explore-btn{
+    text-align: center;
+    left: -20px;
+  }
+  .wrapper-serv .container-services .card .explore-btn a{
+    padding: 12px 45px;
+    text-align: center;
+    background-color: #09d83d;
+    color: #ffffff;
+    font-weight: bolder;
+    border-radius: 4px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+  }
+  .wrapper-serv .container-services .card .explore-btn a:hover i{
+    margin-left: 5px;
+    transition: 0.18s all ease;
+  }
+
+  @media (max-width: 768px) {
+    .wrapper-serv{
+        height: auto;
+      }
+      .wrapper-serv .container-services{
+        flex-direction: column;
+        height: auto;
+      }
+      .wrapper-serv .container-services .card{
+        width: 100%;
+        margin: 25px 0;
+      }
+      .wrapper-serv .container-services .card:last-child{
+        margin-bottom: 25px;
+      }
+  }
+
+
+
+  /* Footer */
+  footer {
+    background-color: #242424;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  footer h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  footer ul li i {
+    margin-right: 10px;
+  }
+  
